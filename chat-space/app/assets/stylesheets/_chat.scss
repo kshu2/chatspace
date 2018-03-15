@@ -1,5 +1,10 @@
+$white: #FFF;
+$blue: #38AEF0;
+$gray: #434a54;
+
+
 .sideSpace {
-  color: #FFF;
+  color: $white;
   width: 300px;
   float: left ;
   box-sizing: border-box;
@@ -22,7 +27,7 @@
         display: inline-block;
       }
       .symbol{
-        color: #FFF;
+        color: $white;
         font-size: 16px;
       }
     }
@@ -77,13 +82,13 @@
     }
     .right-header {
       &__submit {
-      color: #38AEF0;
+      color: $blue;
       height: 40px;
       line-height: 40px;
       padding: 0 20px;
       float: right;
       margin-top: 28px;
-      border: 1px solid #38AEF0;
+      border: 1px solid $blue;
       }
     }
   }
@@ -97,7 +102,7 @@
       .paramater {
         display: flex;
         &__user-id {
-          color: #434a54;
+          color: $gray;
           font-size: 16px;
           font-weight: bold;
         }
@@ -110,7 +115,7 @@
       .message {
         margin-top: 10px;
         margin-bottom: 40px;
-        color: #434a54;
+        color: $gray;
         font-size: 14px;
       }
     }
@@ -129,7 +134,7 @@
       padding-left: 10px;
     }
     &__send {
-      background-color: #FFF;
+      background-color: $white;
       height: 50px;
       padding-right: 10px;
       float: left;
@@ -142,10 +147,10 @@
       }
     }
     &__submit {
-      background-color: #38AEF0;
+      background-color: $blue;
       border: none;
       height: 50px;
-      color: #FFF;
+      color: $white;
       font-size: 16px;
       padding: 0 30px;
       float: right;
