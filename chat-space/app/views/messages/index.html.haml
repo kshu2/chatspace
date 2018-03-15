@@ -1,0 +1,81 @@
+.wrapper
+  .sideSpace
+    .header
+      .header__username
+        USER NAME
+      %ul.header__link
+        %li.link
+          =link_to do
+            = fa_icon "edit", class: "symbol"
+        %li.link
+          =link_to do
+            = fa_icon "cog", class: "symbol"
+
+    %ul.middler
+      %li.group
+        .group__id
+          groupe1
+        .group__message
+          message
+      %li.group
+        .group__id
+          groupe2
+        .group__message
+          message
+      %li.group
+        .group__id
+          groupe3
+        .group__message
+          message
+
+
+  .chat
+    .header
+      .left-header
+        .left-header__id
+          groupe1
+        %ul.left-header__members
+          Member：
+          %li.member
+            menber1
+          %li.member
+            menber2
+          %li.member
+            menber3
+      .right-header
+        %input.right-header__submit{type: "submit", value: "Edit"}
+
+    %ul.main
+      %li.contributer
+        .paramater
+          .paramater__user-id
+            menber1
+          .paramater__date
+            2018/00/00
+        .message
+          message
+      %li.contributer
+        .paramater
+          .paramater__user-id
+            menber1
+          .paramater__date
+            2018/00/00
+        .message
+          message
+      %li.contributer
+        .paramater
+          .paramater__user-id
+            menber2
+          .paramater__date
+            2018/00/00
+        .message
+          message
+
+    .form
+      %form
+        %input.form__message{placeholder: "type a message", type: "text"}
+        .form__send
+          %label.form__send__image
+            = fa_icon "image", class: "symbol"
+            %input.hidden{type: "file"}
+      %input.form__submit{type: "submit", value: "Send"}
