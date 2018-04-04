@@ -49,4 +49,5 @@ $(document).on('turbolinks:load', function() {
       alert('error');
     })
   })
-});
+ });
+

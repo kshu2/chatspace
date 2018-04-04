@@ -26,5 +26,5 @@
         .form__send
           = f.label :image, class: 'form__send__image' do
             = fa_icon 'picture-o', class: 'symbol'
-            = f.file_field :image, class: 'hidden'
+            = f.file_field :image, class: 'hidden form_image'
         = f.submit 'Send', class: 'form__submit'
