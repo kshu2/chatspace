@@ -1,3 +1,4 @@
+#非同期通信
 json.messages @messages.each do |message|
   json.id       message.id
   json.name     message.user.name
