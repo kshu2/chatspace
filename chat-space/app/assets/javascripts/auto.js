@@ -26,7 +26,7 @@ $(document).on('turbolinks:load', function() {
         dataType: 'json'
       })
       .done(function(json){
-        var id = $('.message:last').data('message-id');
+        var id = $('.message').data('message-id');
         var insertHTML = '';
         json.messages.forEach(function(message){
           if (message.id > id ){

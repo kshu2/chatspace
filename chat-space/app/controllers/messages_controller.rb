@@ -4,10 +4,9 @@ class MessagesController < ApplicationController
   def index
     @message = Message.new
     @messages = @group.messages.includes(:user)
-    #非同期通信
     respond_to do |format|
       format.html
-      format.json
+      format.json { @messagemes = @messages.where('id > ?', params[:id]) }
     end
   end
 
@@ -34,3 +33,5 @@ class MessagesController < ApplicationController
     @group = Group.find(params[:group_id])
   end
 end
+
+#
