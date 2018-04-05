@@ -34,12 +34,15 @@
     background-color: #2f3e51;
 
     .group {
+      color: #fff;
       box-sizing: border-box;
       padding: 20px 0 40px;
       &__id {
+        color: #fff;
         font-size: 15px;
       }
       &__message {
+        color: #fff;
         margin-top: 5px;
         font-size: 11px;
       }
@@ -65,7 +68,6 @@
         font-size: 20px;
       }
       &__members {
-        margin-top: 15px;
         font-size: 12px;
         color: #999;
         display: flex;
@@ -88,30 +90,27 @@
     }
   }
 
-  .main {
-    box-sizing: border-box;
-    background-color: #FAFAFA;
-    padding: 46px 40px 0;
-    height: calc(100vh - 100px - 90px);
-    .contributer {
-      .paramater {
+.messages{
+    overflow: auto;
+    padding: 0px 40px;
+    height: calc(100vh - 90px - 100px);
+    .message{
+      box-sizing: border-box;
+      padding-top: 40px;
+      .top-content{
         display: flex;
-        &__user-id {
-          color: #434a54;
-          font-size: 16px;
+        font-size: 11px;
+        padding-bottom: 10px;
+        &__id{
           font-weight: bold;
+          padding-right: 10px;
         }
-        &__date {
-          color: #999;
-          font-size: 12px;
-          padding-left: 10px;
+        &__date{
+          color: #999999;
         }
       }
-      .message {
-        margin-top: 10px;
-        margin-bottom: 40px;
-        color: #434a54;
-        font-size: 14px;
+      .bottom-content{
+        font-size: 11px;
       }
     }
   }
