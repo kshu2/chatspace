@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function() {
+$(function() {
 
   function appendUser(user) {
     var html =`<div class="chat-group-user clearfix">
@@ -53,6 +53,7 @@ $(document).on('turbolinks:load', function() {
     var user_name = $(this).data('user-name');
     $('#chat-group-users').append(appendHTML(user_id, user_name));
     $(this).parent().remove();
+    return false;
   })
 
   $(document).on("click", ".user-search-remove", function(){

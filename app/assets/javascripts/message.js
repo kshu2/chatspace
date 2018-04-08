@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function() {
+$(function() {
   function buildHTML(message){
     var only_text = `<div class="message" data-message-id="${message.id}">
                      <div class="top-content">
