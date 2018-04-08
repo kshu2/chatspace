@@ -64,6 +64,7 @@ gem "devise"
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
+gem 'fog-ovirt', '<= 0.1.2'
 
 group :production do
   gem 'unicorn'
