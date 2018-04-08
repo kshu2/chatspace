@@ -9833,3 +9833,63 @@ Processing by MessagesController#index as JSON
 Completed 200 OK in 22ms (Views: 16.5ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/groups/45/messages" for 127.0.0.1 at 2018-04-07 20:11:12 +0900
+Processing by MessagesController#index as JSON
+  Parameters: {"group_id"=>"45"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 45 LIMIT 1[0m
+  Rendering messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 45[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3[0m
+  Rendered messages/index.json.jbuilder (4.2ms)
+Completed 200 OK in 20ms (Views: 13.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/45/messages" for 127.0.0.1 at 2018-04-07 20:11:17 +0900
+Processing by MessagesController#index as JSON
+  Parameters: {"group_id"=>"45"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 45 LIMIT 1[0m
+  Rendering messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 45[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3[0m
+  Rendered messages/index.json.jbuilder (5.8ms)
+Completed 200 OK in 22ms (Views: 15.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/groups/45/messages" for 127.0.0.1 at 2018-04-07 20:11:23 +0900
+Processing by MessagesController#index as JSON
+  Parameters: {"group_id"=>"45"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 45 LIMIT 1[0m
+  Rendering messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 45[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3[0m
+  Rendered messages/index.json.jbuilder (8.2ms)
+Completed 200 OK in 23ms (Views: 17.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/groups/45/messages" for 127.0.0.1 at 2018-04-07 20:11:27 +0900
+Processing by MessagesController#index as JSON
+  Parameters: {"group_id"=>"45"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 45 LIMIT 1[0m
+  Rendering messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 45[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3[0m
+  Rendered messages/index.json.jbuilder (6.0ms)
+Completed 200 OK in 21ms (Views: 15.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/groups/45/messages" for 127.0.0.1 at 2018-04-07 20:11:32 +0900
+Processing by MessagesController#index as JSON
+  Parameters: {"group_id"=>"45"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  `groups`.* FROM `groups` WHERE `groups`.`id` = 45 LIMIT 1[0m
+  Rendering messages/index.json.jbuilder
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`group_id` = 45[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3[0m
+  Rendered messages/index.json.jbuilder (4.6ms)
+Completed 200 OK in 20ms (Views: 13.6ms | ActiveRecord: 1.1ms)
+
+
